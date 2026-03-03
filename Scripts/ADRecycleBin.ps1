@@ -1,2 +1,2 @@
 Import-Module ActiveDirectory
-Enable-ADOptionalFeature -Identity (Recycle Bin Feature) -Scope ForestOrConfigurationSet -Target "Adatum.com" -Confirm:$false
+Enable-ADOptionalFeature -Identity "Recycle Bin Feature" -Scope ForestOrConfigurationSet -Target "Adatum.com" -Confirm:$false

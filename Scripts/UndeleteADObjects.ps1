@@ -1,0 +1,1 @@
+Get-ADObject -Filter { isdeleted -eq $true } -IncludeDeletedObjects -Properties * | Restore-ADObject
