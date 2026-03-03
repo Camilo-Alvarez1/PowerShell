@@ -1,4 +1,5 @@
-﻿Set-ExecutionPolicy RemoteSigned
+#Setting execution policy
+ Set-ExecutionPolicy RemoteSigned
 Enable-PSremoting -SkipNetworkProfileCheck
 
 Enter-PSSession -ComputerName LON-DC1
