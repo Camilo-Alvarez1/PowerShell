@@ -1,0 +1,61 @@
+ ForEach Loop Challenge 
+
+Task 1 
+
+1.	Create an array $numbers to include numbers 1,2,3,4,5,6 
+
+2.	Write a foreach loop to display each number in the array collection. 
+
+3.	Modify loop to multiply each number by 6. 
+
+Task 2 
+
+1.	Create an array $files that contains the files in E:\Mod07\Labfiles 
+
+2.	Write a foreach loop to display only the name property of each file. 
+
+Task 3 
+
+1.        Use PowerShell to create a new OU named “Disabled Users”. 
+
+Task 4 
+
+1.	Get users in Marketing OU whose name starts with the letter "A” 
+
+2.	Disable users in Marketing OU whose name starts with the letter "A” 
+
+3.	Modify Annie Conner account by changing her department to IT. 
+
+Task 5 
+
+1.	Get only disabled users in Marketing OU whose department is Marketing and NOT departmenout-filt not IT (Annie Conner should not be in the list). 
+
+2.	Create an array $users using the above code in step 1. 
+
+3.	Write foreach loop to display a list of only the Name property of the disabled users 
+
+ 
+
+ 
+
+Task 6  
+
+Modify the foreach loop to send name and department properties to csv file named C:\DisabledMarketingUsers with NoTypeInformation in header row. 
+
+ 
+
+ 
+
+Task 7 
+
+Modify foreach loop to Move disabled users to the OU “Disabled Users”. 
+
+ 
+
+ 
+
+Task 8 
+
+Modify foreach loop adding write-host statements to indicate each user that is getting moved during the loop. 
+
+Use PowerShell to move all the disabled users back to the “Marketing” OU from “Disabled Users” OU. 
