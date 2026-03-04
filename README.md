@@ -23,6 +23,10 @@ This repo serves as:
 
 ---
 
+## Upcoming
+- /Practice/Hashtables — Demonstrate what hashtables are and how they can be used
+- /Scripts/ServerConfigAutomation — Create a script that can configure Windows Server 2025
+
 ## Skills Demonstrated
 
 - Active Directory automation
