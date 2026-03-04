@@ -13,4 +13,16 @@ $OUName = "London"
 
 $DomainDN = "DC=Adatum,DC=com" 
 
-$OUPath = "OU=$OUName,$DomainDN" 
+$OUPath = "OU=$OUName,$DomainDN"
+
+Part 2 
+
+Inside the new “London” OU create a global security group named “London Users” 
+
+Part 3  
+
+Locate all users int the Sales OU that have an address in the city of London and move them into the London OU. 
+
+Part 4 
+
+Add the London OU users into the “London Users” security group. 
