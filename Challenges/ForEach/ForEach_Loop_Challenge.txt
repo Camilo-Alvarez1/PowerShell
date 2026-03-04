@@ -16,7 +16,7 @@ Task 2
 
 Task 3 
 
-1.        Use PowerShell to create a new OU named “Disabled Users”. 
+1. Use PowerShell to create a new OU named “Disabled Users”. 
 
 Task 4 
 
@@ -34,28 +34,16 @@ Task 5
 
 3.	Write foreach loop to display a list of only the Name property of the disabled users 
 
- 
-
- 
-
 Task 6  
 
-Modify the foreach loop to send name and department properties to csv file named C:\DisabledMarketingUsers with NoTypeInformation in header row. 
-
- 
-
- 
+1. Modify the foreach loop to send name and department properties to csv file named C:\DisabledMarketingUsers with NoTypeInformation in header row. 
 
 Task 7 
 
-Modify foreach loop to Move disabled users to the OU “Disabled Users”. 
-
- 
-
- 
+1. Modify foreach loop to Move disabled users to the OU “Disabled Users”. 
 
 Task 8 
 
-Modify foreach loop adding write-host statements to indicate each user that is getting moved during the loop. 
+1. Modify foreach loop adding write-host statements to indicate each user that is getting moved during the loop. 
 
-Use PowerShell to move all the disabled users back to the “Marketing” OU from “Disabled Users” OU. 
+2. Use PowerShell to move all the disabled users back to the “Marketing” OU from “Disabled Users” OU. 

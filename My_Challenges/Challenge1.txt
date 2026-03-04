@@ -1,0 +1,18 @@
+# Start_Workday.ps1 #
+
+Goal:
+Create a script that opens up all the applications and websites that I need to start work in the morining.
+
+Purpose:
+Start my work day more efficently.
+
+Nessisary applications:
+    Teams
+    Notion
+    Notepad
+
+Nessisary websites:
+    OneNote
+    Skillable
+    Copilot
+    GitHub
