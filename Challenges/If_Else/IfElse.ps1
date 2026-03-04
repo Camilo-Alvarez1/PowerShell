@@ -33,9 +33,19 @@ if ($ou) {"The following OU already exists: $($ou.distinguishedname)"}
 New-ADGroup -Name "London Users" -GroupCategory Security -GroupScope Global -Path "ou=london,dc=adatum,dc=com"
 
 # Part 3
-$LondonUsers = Get-ADUser -SearchBase "OU=Sales,DC=Adatum,DC=com" -filter "City -eq 'London'" -Properties * | select distinguishedname
+$LondonUsers = Get-ADUser -SearchBase "OU=Sales,DC=Adatum,DC=com" -filter "City -eq 'London'" -Properties * | select -ExpandProperty distinguishedname
 foreach ($user in $LondonUsers) {
     Move-ADObject -Identity $user -TargetPath "OU=London,DC=Adatum,DC=com"
 }
 
-Move-ADObject -Identity $LondonUsers -TargetPath "OU=London,DC=Adatum,DC=com"
+# Part 4
+$LONUsers = Get-ADUser -SearchBase "OU=London,DC=Adatum,DC=com" -filter * -Properties * | Select-Object -ExpandProperty distinguishedname
+foreach ($user in $LONUsers) {
+    Add-ADGroupMember -Identity "London Users" -Members $user 
+}
+
+## Test ##
+# Move-ADObject -Identity $LondonUsers -TargetPath "OU=London,DC=Adatum,DC=com"
+# Get-ADUser -SearchBase "OU=London,DC=Adatum,DC=com" -filter * | measure
+# same number 47
+# $LondonUsers = Get-ADUser -SearchBase "OU=london,DC=Adatum,DC=com" -filter * -Properties * | select -ExpandProperty distinguishedname
