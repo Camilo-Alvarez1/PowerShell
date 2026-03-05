@@ -5,7 +5,7 @@ $trigger = New-ScheduledTaskTrigger -Daily -At 7:50AM
 # Changes the trigger from every day (7 Days a week) to Mon-Thur using an aray of days @()
 $trigger.daysofweek = @("Monday","Tuesday","Wednesday","Thursday")
 
-Register-ScheduledTask -TaskName "Start Workday Apps" -Action $action -Trigger $trigger -Description "Opens all work applications at 7:50 AM on weekdays exept Friday"
+Register-ScheduledTask -TaskName "Start Workday Apps1" -Action $action -Trigger $trigger -Description "Opens all work applications at 7:50 AM on weekdays exept Friday"
 
 # View Scheduled Task #
 # Get-ScheduledTask -TaskName "Start Workday Apps"
