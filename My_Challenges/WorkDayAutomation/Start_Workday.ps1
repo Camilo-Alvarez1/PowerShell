@@ -32,5 +32,3 @@ Start-Process "https://lms.learnondemand.net/User/Login?ReturnUrl=%2F"
 Start-Process "https://github.com/"
 
 
-
-
