@@ -20,15 +20,15 @@ function Start-App {
     }
 }
 
-function Start-Website {
-    param (
-        [string]$name
-        [string]$url
-    )
+#function Start-Website {
+   # param (
+       # [string]$name
+        #[string]$url
+   # )
     
     # Log start attempt
-    Add-Content -Path
-}
+   # Add-Content -Path
+#}
 
 # Launch Apps #
 Start-App -processName "Notion Ai" -executablePath "C:\Users\camil\AppData\Local\Programs\Notion\Notion.exe"
