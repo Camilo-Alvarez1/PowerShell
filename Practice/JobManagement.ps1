@@ -4,7 +4,7 @@ Invoke-Command -ScriptBlock { Get-NetAdapter -Physical } -ComputerName LON-DC1,L
 # Start a remote job that retrives SMB Shares from DC1 and SVR1
 Invoke-Command -ScriptBlock { Get-SmbShare } -ComputerName LON-DC1,LON-SVR1 -AsJob -JobName RemoteNetAdapt
 
-# Start a remote job that retrives all instances of the Win32_Volume class from all computers in AD DS
+# #Start a remote job that retrives all instances of the Win32_Volume class from all computers in AD DS
 Enable-PSRemoting –SkipNetworkProfileCheck –Force
 Invoke-Command –ScriptBlock { Get-CimInstance –ClassName Win32_Volume } –ComputerName (Get-ADComputer –Filter * | Select –Expand Name) –AsJob –JobName RemoteDisks
 
