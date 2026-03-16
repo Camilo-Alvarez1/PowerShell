@@ -35,5 +35,3 @@ Connect-VMNetworkAdapter -VMName $VMName -SwitchName "Default Switch"
 
 # Start the VM
 Start-VM -Name $VMName
-
-
