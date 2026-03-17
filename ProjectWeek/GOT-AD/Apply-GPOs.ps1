@@ -1,4 +1,4 @@
-
+# Westeros
 $DomainName = "got.lab"
 
 # OUs (Great Houses)
