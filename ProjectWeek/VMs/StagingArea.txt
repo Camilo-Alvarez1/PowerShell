@@ -1,0 +1,12 @@
+
+Write-Host "=== Running DHCP post-install configuration (Security Groups and service restart) ==="
+
+Invoke-Command -VMName $VMName -Credential $domainCred -ScriptBlock {
+    Write-Host "=== Creating DHCP security groups ==="
+    netsh dhcp add securitygroups
+
+    Write-Host "=== Restarting DHCP service ==="
+    Restart-Service dhcpserver -Force
+}
+
+# Encountered an issue where DNS was missing its DNS forwader
