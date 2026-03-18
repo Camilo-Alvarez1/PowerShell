@@ -15,20 +15,64 @@ $Houses = @(
     "NightWatch"
 )
 
-# Users (Characters)
 $Users = @{
-    HouseStark     = @("EddardStark","CatelynStark","RobbStark","SansaStark","AryaStark","BranStark","JonSnow")
-    HouseLannister = @("TywinLannister","CerseiLannister","JaimeLannister","TyrionLannister")
-    HouseTargaryen = @("DaenerysTargaryen","ViserysTargaryen","RhaegarTargaryen")
-    HouseBaratheon = @("RobertBaratheon","StannisBaratheon","RenlyBaratheon")
-    HouseGreyjoy   = @("BalonGreyjoy","YaraGreyjoy","TheonGreyjoy")
-    HouseTyrell    = @("MaceTyrell","MargaeryTyrell","LorasTyrell")
-    HouseMartell   = @("DoranMartell","OberynMartell","TrystaneMartell")
-    HouseArryn     = @("JonArryn","LysaArryn","RobinArryn")
-    HouseTully     = @("HosterTully","EdmureTully","BryndenTully")
-    NightWatch     = @("JeorMormont","SamwellTarly","AlliserThorne","EddisonTollett")
-}
-
+    HouseStark     = @(
+        "Eddard Stark",
+        "Catelyn Stark",
+        "Robb Stark",
+        "Sansa Stark",
+        "Arya Stark",
+        "Bran Stark",
+        "Jon Snow"
+    )
+    HouseLannister = @(
+        "Tywin Lannister",
+        "Cersei Lannister",
+        "Jaime Lannister",
+        "Tyrion Lannister"
+    )
+    HouseTargaryen = @(
+        "Daenerys Targaryen",
+        "Viserys Targaryen",
+        "Rhaegar Targaryen"
+    )
+    HouseBaratheon = @(
+        "Robert Baratheon",
+        "Stannis Baratheon",
+        "Renly Baratheon"
+    )
+    HouseGreyjoy   = @(
+        "Balon Greyjoy",
+        "Yara Greyjoy",
+        "Theon Greyjoy"
+    )
+    HouseTyrell    = @(
+        "Mace Tyrell",
+        "Margaery Tyrell",
+        "Loras Tyrell"
+    )
+    HouseMartell   = @(
+        "Doran Martell",
+        "Oberyn Martell",
+        "Trystane Martell"
+    )
+    HouseArryn     = @(
+        "Jon Arryn",
+        "Lysa Arryn",
+        "Robin Arryn"
+    )
+    HouseTully     = @(
+        "Hoster Tully",
+        "Edmure Tully",
+        "Brynden Tully"
+    )
+    NightWatch     = @(
+        "Jeor Mormont",
+        "Samwell Tarly",
+        "Alliser Thorne",
+        "Eddison Tollett"
+    )
+    
 # Sites and Subnets
 $Sites = @{
     "Winterfell-Site"     = "192.168.10.0/24"
