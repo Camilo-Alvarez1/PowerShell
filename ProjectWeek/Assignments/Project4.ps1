@@ -68,7 +68,7 @@ $report = foreach ($vm in $systems) {
 
 # Output and export
 $report | Format-Table -AutoSize
-$report | Export-Csv "VM_Audit_Report.csv" -NoTypeInformation
+$report | Export-Csv -path "C:\GitHubRepositories\PowerShell\ProjectWeek\Assignments\OutComes\VM_Audit_Report.csv" -NoTypeInformation
 
 # Spent 2 hours trying to figure out why the domain admins credentials where not working on either VM
 # Solution: I was using the wrong username. Found this by using "Whoami" on the server and found lab\Administrator
