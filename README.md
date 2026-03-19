@@ -9,6 +9,14 @@ A curated collection of PowerShell scripts built for Windows Server, Active Dire
 
 ---
 
+## 🤝 Connect With Me
+
+Connect with me to discuss job opportunities, share ideas, or stay in touch.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/camilo-alvarez1/)
+
+---
+
 ## 🎯 Purpose
 
 This repository serves as:
